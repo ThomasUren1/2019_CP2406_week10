@@ -6,16 +6,16 @@ import java.awt.*;
 public class FixDebugFifteen3 extends JFrame implements KeyListener
 {
    char key;
-   Container con = null;
-   GridLayout grid = new GridLayout(2, 1);
-   JLabel label = new JLabel("Key Typed:");
-   JTextArea textArea = new JTextArea(4, 25);
-   public FixDebugFifteen3()
+   private JLabel label = new JLabel("Key Typed:");
+
+   private FixDebugFifteen3()
    {
       setTitle("Debug Key Frame");
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      con = this.getContentPane();
+      Container con = this.getContentPane();
+      GridLayout grid = new GridLayout(2, 1);
       con.setLayout(grid);
+      JTextArea textArea = new JTextArea(4, 25);
       con.add(textArea);
       con.add(label);
       addKeyListener(this);

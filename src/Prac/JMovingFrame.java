@@ -45,3 +45,4 @@ public class JMovingFrame extends JFrame implements ActionListener
       mFrame.setVisible(true);
    }
 }
+

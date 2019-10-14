@@ -34,5 +34,3 @@ public class JPanelDemo extends JFrame
       app.setSize(240, 240);
    }
 }
-   
-

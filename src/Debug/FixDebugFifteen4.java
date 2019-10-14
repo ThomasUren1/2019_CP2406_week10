@@ -5,32 +5,31 @@ import java.awt.*;
 import java.awt.event.*;
 public class FixDebugFifteen4 extends JFrame implements ActionListener
 {
-   JMenuBar mainBar = new JMenuBar();
-   JMenu menu1 = new JMenu("File");
-   JMenu menu2 = new JMenu("Symbols");
-   JMenu menu3 = new JMenu("Cities");
-   JMenuItem exit = new JMenuItem("Exit");
-   JMenuItem animal = new JMenuItem("Animal");
-   JMenuItem song = new JMenuItem("Song");
-   JMenuItem flower = new JMenuItem("Flower");
-   JMenuItem milwaukee = new JMenuItem("Milwaukee");
-   JMenuItem madison = new JMenuItem("Madison");
-   JLabel label1 = new JLabel(" Wisconsin Facts ");
-   JLabel label2 = new JLabel();
-   public FixDebugFifteen4()
+   private JMenuItem exit = new JMenuItem("Exit");
+   private JMenuItem animal = new JMenuItem("Animal");
+   private JMenuItem song = new JMenuItem("Song");
+   private JMenuItem flower = new JMenuItem("Flower");
+   private JMenuItem milwaukee = new JMenuItem("Milwaukee");
+   private JLabel label2 = new JLabel();
+   private FixDebugFifteen4()
    {
       setTitle("Facts about Wisconsin");
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       setLayout(new FlowLayout());
+      JMenuBar mainBar = new JMenuBar();
       setJMenuBar(mainBar);
+      JMenu menu1 = new JMenu("File");
       mainBar.add(menu1);
-      mainBar.add(menu2);   
+      JMenu menu2 = new JMenu("Symbols");
+      mainBar.add(menu2);
+      JMenu menu3 = new JMenu("Cities");
       mainBar.add(menu3);
       menu1.add(exit);
       menu2.add(animal);
       menu2.add(song);
       menu2.add(flower);
       menu3.add(milwaukee);
+      JMenuItem madison = new JMenuItem("Madison");
       menu3.add(madison);
       exit.addActionListener(this);
       animal.addActionListener(this);
@@ -38,6 +37,7 @@ public class FixDebugFifteen4 extends JFrame implements ActionListener
       flower.addActionListener(this);
       milwaukee.addActionListener(this);
       madison.addActionListener(this);
+      JLabel label1 = new JLabel(" Wisconsin Facts ");
       add(label1);
       label1.setFont(new Font("Arial", Font.BOLD, 14));
       add(label2);

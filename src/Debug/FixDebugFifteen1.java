@@ -7,25 +7,25 @@ import java.awt.event.*;
 import java.awt.Color;
 public class FixDebugFifteen1 extends JFrame implements ActionListener
 {
-   JButton button1 = new JButton("Red");
-   JButton button2 = new JButton("Pink");
-   JButton button3 = new JButton("Orange");
-   JButton button4 = new JButton("Yellow");
-   JButton button5 = new JButton("Black");
+   private JButton button1 = new JButton("Red");
+   private JButton button2 = new JButton("Pink");
+   private JButton button3 = new JButton("Orange");
+   private JButton button4 = new JButton("Yellow");
 
-   JPanel panel1 = new JPanel(new FlowLayout());
-   JPanel panel2 = new JPanel();
+   private JPanel panel2 = new JPanel();
 
-   public FixDebugFifteen1()
+   private FixDebugFifteen1()
    {
       setLayout(new GridLayout(1, 2));
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      JPanel panel1 = new JPanel(new FlowLayout());
       add(panel1);
       add(panel2);
       panel1.add(button1);
       panel1.add(button2);
       panel1.add(button3);
       panel1.add(button4);
+      JButton button5 = new JButton("Black");
       panel1.add(button5);
 
 
